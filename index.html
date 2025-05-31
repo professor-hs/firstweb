@@ -1,64 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Health Club | VIT</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Club Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0d6efd;
+      color: white;
+      padding: 10px 0;
+      z-index: 999;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 80px 20px 40px;
+    }
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .member {
+      width: 150px;
+      text-align: center;
+    }
+    .member img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>VIT Health Club</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#board">Board Members</a></li>
-        <li><a href="#posters">Posters</a></li>
-        <li><a href="#events">Year-wise Events</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home">
-    <h2>Welcome to the Health Club</h2>
-    <p>Empowering health and wellness at VIT.</p>
-  </section>
-
-  <section id="overview">
-    <h2>About the Club</h2>
-    <p>The Health Club at VIT promotes physical, mental, and emotional well-being through interactive workshops, awareness events, and community engagement.</p>
-  </section>
-
-  <section id="board">
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#board">Board Members</a></li>
+      <li><a href="#faculty">Faculty Co-ordinator</a></li>
+      <li><a href="#events2023">2023 Events</a></li>
+      <li><a href="#events2024">2024 Events</a></li>
+      <li><a href="#gravitas23">Gravitas '23</a></li>
+      <li><a href="#gravitas24">Gravitas '24</a></li>
+      <li><a href="#riviera25">Riviera '25</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>  <section id="about">
+    <h2>About the Health Club</h2>
+    <p>Promoting wellness through interactive events and community activities.</p>
+  </section>  <section id="board">
     <h2>Board Members</h2>
-    <p>List of board members with designations and photos (to be added).</p>
-  </section>
-
-  <section id="posters">
-    <h2>Event Posters</h2>
-    <p>Gallery of posters from past events (images to be added).</p>
-  </section>
-
-  <section id="events">
-    <h2>Year-wise Events</h2>
-    <p>Summarize major events organized each academic year.</p>
-  </section>
-
-  <section id="blogs">
-    <h2>Health Club Blogs</h2>
-    <p>Read insights, fitness tips, and mental health stories shared by our members.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: healthclub@vit.ac.in<br />Instagram: @vit_healthclub</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 VIT Health Club. All rights reserved.</p>
+    <div class="members">
+      <div class="member">
+        <img src="vaishnavisaripalli.png" alt="Chairperson" />
+        <p>Vaishnavi Saripalli<br><small>Chairperson</small></p>
+      </div>
+      <div class="member">
+        <img src="jagadeeshhs.png" alt="Vice Chairperson" />
+        <p>Jagadeesh H S<br><small>Vice-Chairperson</small></p>
+      </div>
+      <div class="member">
+        <img src="vaishnavi.png" alt="Secretary" />
+        <p>Vaishnavi<br><small>Secretary</small></p>
+      </div>
+      <div class="member">
+        <img src="nehasaji.png" alt="Co-secretary" />
+        <p>Neha Shaji<br><small>Co-secretary</small></p>
+      </div>
+      <div class="member">
+        <img src="aswin.png" alt="Design Head" />
+        <p>Aswin<br><small>Design Head</small></p>
+      </div>
+      <div class="member">
+        <img src="aryan.png" alt="Editorial Head" />
+        <p>Aryan<br><small>Editorial Head</small></p>
+      </div>
+      <div class="member">
+        <img src="pavithra.png" alt="HR and Management" />
+        <p>Pavithra<br><small>HR and Management</small></p>
+      </div>
+      <div class="member">
+        <img src="bhavishya.png" alt="Events Head" />
+        <p>Bhavishya<br><small>Events Head</small></p>
+      </div>
+      <div class="member">
+        <img src="aayush.png" alt="Finance Head" />
+        <p>Aayush<br><small>Finance Head</small></p>
+      </div>
+      <div class="member">
+        <img src="kaaviya.png" alt="Outreach Head" />
+        <p>Kaaviya<br><small>Outreach Head</small></p>
+      </div>
+    </div>
+  </section>  <section id="faculty">
+    <h2>Faculty Co-ordinator</h2>
+    <p>Dr. [Faculty Name], Department of [Department Name]</p>
+  </section>  <section id="events2023">
+    <h2>2023 Events</h2>
+    <p>Upload event photos and titles here.</p>
+  </section>  <section id="events2024">
+    <h2>2024 Events</h2>
+    <p>Upload event photos and titles here.</p>
+  </section>  <section id="gravitas23">
+    <h2>Gravitas '23</h2>
+    <p>Slideshow coming soon...</p>
+  </section>  <section id="gravitas24">
+    <h2>Gravitas '24</h2>
+    <p>Slideshow coming soon...</p>
+  </section>  <section id="riviera25">
+    <h2>Riviera '25</h2>
+    <p>Slideshow coming soon...</p>
+  </section>  <section id="contact">
+    <h2>Contact Details</h2>
+    <ul>
+      <li>Email: <a href="mailto:healthclub@vit.ac.in">healthclub@vit.ac.in</a></li>
+      <li>Phone: <a href="tel:+919876543210">+91 98765 43210</a></li>
+      <li>Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Health Club LinkedIn</a></li>
+      <li>WhatsApp: <a href="https://wa.me/919876543210" target="_blank">Message on WhatsApp</a></li>
+    </ul>
+  </section>  <footer>
+    <p>&copy; 2025 Health Club. All rights reserved.</p>
   </footer>
 </body>
 </html>
