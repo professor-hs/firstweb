@@ -1,155 +1,216 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Health Club Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Club - VIT Vellore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }body {
+        background-color: #f2f2f2;
+        color: #333;
+        scroll-behavior: smooth;
     }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #0d6efd;
-      color: white;
-      padding: 10px 0;
-      z-index: 999;
+
+    #splash {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        animation: fadeSplash 3s forwards;
     }
+
+    @keyframes fadeSplash {
+        0% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+    }
+
+    header {
+        background-color: #004d40;
+        color: white;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
     nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
     }
-    nav ul li {
-      margin: 0 10px;
-    }
+
     nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
     }
+
     section {
-      padding: 80px 20px 40px;
+        padding: 3rem 1rem;
+        animation: fadeIn 1s ease-in;
     }
-    .members {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
     }
-    .member {
-      width: 150px;
-      text-align: center;
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
-    .member img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
+
+    .gallery img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
     }
-    footer {
-      background-color: #f8f9fa;
-      padding: 20px;
-      text-align: center;
+
+    .board-member, .faculty {
+        text-align: center;
     }
-  </style>
+
+    .board-member img, .faculty img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 24px;
+        color: #004d40;
+    }
+</style>
+
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#board">Board Members</a></li>
-      <li><a href="#faculty">Faculty Co-ordinator</a></li>
-      <li><a href="#events2023">2023 Events</a></li>
-      <li><a href="#events2024">2024 Events</a></li>
-      <li><a href="#gravitas23">Gravitas '23</a></li>
-      <li><a href="#gravitas24">Gravitas '24</a></li>
-      <li><a href="#riviera25">Riviera '25</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>  <section id="about">
-    <h2>About the Health Club</h2>
-    <p>Promoting wellness through interactive events and community activities.</p>
-  </section>  <section id="board">
-    <h2>Board Members</h2>
-    <div class="members">
-      <div class="member">
-        <img src="vaishnavisaripalli.png" alt="Chairperson" />
-        <p>Vaishnavi Saripalli<br><small>Chairperson</small></p>
-      </div>
-      <div class="member">
-        <img src="jagadeeshhs.png" alt="Vice Chairperson" />
-        <p>Jagadeesh H S<br><small>Vice-Chairperson</small></p>
-      </div>
-      <div class="member">
-        <img src="vaishnavi.png" alt="Secretary" />
-        <p>Vaishnavi<br><small>Secretary</small></p>
-      </div>
-      <div class="member">
-        <img src="nehasaji.png" alt="Co-secretary" />
-        <p>Neha Shaji<br><small>Co-secretary</small></p>
-      </div>
-      <div class="member">
-        <img src="aswin.png" alt="Design Head" />
-        <p>Aswin<br><small>Design Head</small></p>
-      </div>
-      <div class="member">
-        <img src="aryan.png" alt="Editorial Head" />
-        <p>Aryan<br><small>Editorial Head</small></p>
-      </div>
-      <div class="member">
-        <img src="pavithra.png" alt="HR and Management" />
-        <p>Pavithra<br><small>HR and Management</small></p>
-      </div>
-      <div class="member">
-        <img src="bhavishya.png" alt="Events Head" />
-        <p>Bhavishya<br><small>Events Head</small></p>
-      </div>
-      <div class="member">
-        <img src="aayush.png" alt="Finance Head" />
-        <p>Aayush<br><small>Finance Head</small></p>
-      </div>
-      <div class="member">
-        <img src="kaaviya.png" alt="Outreach Head" />
-        <p>Kaaviya<br><small>Outreach Head</small></p>
-      </div>
+<body><div id="splash">
+    <img src="logo.png" alt="Health Club Logo" width="150">
+</div><header>
+    <img src="logo.png" alt="Logo" width="50">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#board">Board</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#events2023">Events 2023</a></li>
+            <li><a href="#events2024">Events 2024</a></li>
+            <li><a href="#gravitas23">Gravitas'23</a></li>
+            <li><a href="#gravitas24">Gravitas'24</a></li>
+            <li><a href="#riviera25">Riviera'25</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header><section id="about">
+    <h2>About Health Club</h2>
+    <p>Promoting holistic well-being and awareness among VITians through impactful events and initiatives.</p>
+</section><section id="board">
+    <h2>2024-2025 Board Members</h2>
+    <div class="gallery">
+        <div class="board-member"><img src="vaishnavisaripalli.png"><p>Chairperson</p></div>
+        <div class="board-member"><img src="jagadeeshhs.png"><p>Vice-Chairperson</p></div>
+        <div class="board-member"><img src="vaishnavi.png"><p>Secretary</p></div>
+        <div class="board-member"><img src="nehasaji.png"><p>Co-Secretary</p></div>
+        <div class="board-member"><img src="aswin.png"><p>Design Head</p></div>
+        <div class="board-member"><img src="aryan.png"><p>Editorial Head</p></div>
+        <div class="board-member"><img src="pavithra.png"><p>HR & Management</p></div>
+        <div class="board-member"><img src="bhavishya.png"><p>Events Head</p></div>
+        <div class="board-member"><img src="aayush.png"><p>Finance Head</p></div>
+        <div class="board-member"><img src="kaaviya.png"><p>Outreach Head</p></div>
     </div>
-  </section>  <section id="faculty">
+</section><section id="faculty">
     <h2>Faculty Co-ordinator</h2>
-    <p>Dr. [Faculty Name], Department of [Department Name]</p>
-  </section>  <section id="events2023">
+    <div class="faculty">
+        <img src="jayaramang.png">
+        <p>Jayaraman.G</p>
+        <p>Email: <a href="mailto:gjayaraman@vit.ac.in">gjayaraman@vit.ac.in</a></p>
+    </div>
+</section><section id="events2023">
     <h2>2023 Events</h2>
-    <p>Upload event photos and titles here.</p>
-  </section>  <section id="events2024">
+    <div class="gallery">
+        <!-- Add 10 event photos -->
+        <img src="event2023-1.png">
+        <img src="event2023-2.png">
+        <!-- and so on -->
+    </div>
+</section><section id="events2024">
     <h2>2024 Events</h2>
-    <p>Upload event photos and titles here.</p>
-  </section>  <section id="gravitas23">
+    <div class="gallery">
+        <img src="event2024-1.png">
+        <img src="event2024-2.png">
+        <img src="event2024-3.png">
+        <img src="event2024-4.png">
+        <img src="event2024-5.png">
+        <!-- and so on -->
+    </div>
+</section><section id="gravitas23">
     <h2>Gravitas '23</h2>
-    <p>Slideshow coming soon...</p>
-  </section>  <section id="gravitas24">
+    <div class="gallery">
+        <img src="gravitas23-1.png">
+    </div>
+</section><section id="gravitas24">
     <h2>Gravitas '24</h2>
-    <p>Slideshow coming soon...</p>
-  </section>  <section id="riviera25">
+    <div class="gallery">
+        <img src="gravitas24-1.png">
+        <img src="gravitas24-2.png">
+        <img src="gravitas24-3.png">
+        <img src="gravitas24-4.png">
+        <!-- up to 10 -->
+    </div>
+</section><section id="riviera25">
     <h2>Riviera '25</h2>
-    <p>Slideshow coming soon...</p>
-  </section>  <section id="contact">
-    <h2>Contact Details</h2>
-    <ul>
-      <li>Email: <a href="mailto:healthclub@vit.ac.in">healthclub@vit.ac.in</a></li>
-      <li>Phone: <a href="tel:+919876543210">+91 98765 43210</a></li>
-      <li>Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Health Club LinkedIn</a></li>
-      <li>WhatsApp: <a href="https://wa.me/919876543210" target="_blank">Message on WhatsApp</a></li>
-    </ul>
-  </section>  <footer>
-    <p>&copy; 2025 Health Club. All rights reserved.</p>
-  </footer>
-</body>
+    <div class="gallery">
+        <img src="riviera25-1.png">
+        <img src="riviera25-2.png">
+        <img src="riviera25-3.png">
+        <!-- up to 5 -->
+    </div>
+</section><section id="achievements">
+    <h2>Club Achievements</h2>
+    <div class="gallery">
+        <img src="achieve1.png">
+        <img src="achieve2.png">
+        <!-- up to 8 -->
+    </div>
+</section><section id="blogs">
+    <h2>Blogs</h2>
+    <div class="gallery">
+        <a href="#"><img src="blog1.png"></a>
+        <a href="#"><img src="blog2.png"></a>
+        <a href="#"><img src="blog3.png"></a>
+        <a href="#"><img src="blog4.png"></a>
+        <a href="#"><img src="blog5.png"></a>
+    </div>
+</section><section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:+918122882106">8122882106</a></p>
+    <p>Email: <a href="mailto:healthclub@vit.ac.in">healthclub@vit.ac.in</a></p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/health_club_vit" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://chat.whatsapp.com/FUFLVfci1X143i4MXo0qLv" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/health-club-vit/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section><script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('splash').style.display = 'none';
+        }, 3000);
+    });
+</script></body>
 </html>
