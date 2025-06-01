@@ -188,55 +188,148 @@
         <img src="achieve2.jpg">
         <!-- up to 8 -->
     </div>
-<section>
-  <h2>Our Blogs</h2>
+<section id="blog-section">
 
-  <article>
+  <!-- Visible Blogs -->
+  <figure>
+    <img src="blog1.jpg" alt="Blog 1" width="300" height="200">
+    <figcaption>
+      <a href="https://medium.com/@healthclub_36778/superfoods-myths-and-realities-964ff4b3c149" target="_blank">
+        Superfoods: Myths and Realities
+      </a>
+      <p>
+        👍 <button onclick="likeBlog('blog1')">Like</button>
+        <span id="blog1-likes">0</span> Likes
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="blog2.jpg" alt="Blog 2" width="300" height="200">
+    <figcaption>
+      <a href="https://medium.com/@healthclub_36778/-8c185f2e452a" target="_blank">
+        Health Perspectives: Untitled
+      </a>
+      <p>
+        👍 <button onclick="likeBlog('blog2')">Like</button>
+        <span id="blog2-likes">0</span> Likes
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="blog3.jpg" alt="Blog 3" width="300" height="200">
+    <figcaption>
+      <a href="https://medium.com/@healthclub_36778/stress-college-life-39345ddb97b9" target="_blank">
+        Stress & College Life
+      </a>
+      <p>
+        👍 <button onclick="likeBlog('blog3')">Like</button>
+        <span id="blog3-likes">0</span> Likes
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="blog4.jpg" alt="Blog 4" width="300" height="200">
+    <figcaption>
+      <a href="https://medium.com/@healthclub_36778/pulse-on-the-health-budget-d7ba7cb53c85" target="_blank">
+        Pulse on the Health Budget
+      </a>
+      <p>
+        👍 <button onclick="likeBlog('blog4')">Like</button>
+        <span id="blog4-likes">0</span> Likes
+      </p>
+    </figcaption>
+  </figure>
+
+  <!-- Hidden Blogs -->
+  <div id="more-blogs" style="display: none;">
     <figure>
-      <img src="blog1.jpg" alt="Blog 1 Image" width="300" height="200">
+      <img src="blog5.jpg" alt="Blog 5" width="300" height="200">
       <figcaption>
-        <a href="https://medium.com/@healthclub_36778/superfoods-myths-and-realities-964ff4b3c149" target="_blank">
-          Superfoods: Myths and Realities
+        <a href="https://medium.com/@healthclub_36778/reviving-ancient-wisdom-the-efficacy-of-natural-indian-treatments-over-allopathic-medicine-8e7859532f52" target="_blank">
+          Reviving Ancient Wisdom
         </a>
-        <p>👍 <span>0</span> &nbsp; 💬 <span>0</span></p>
+        <p>
+          👍 <button onclick="likeBlog('blog5')">Like</button>
+          <span id="blog5-likes">0</span> Likes
+        </p>
       </figcaption>
     </figure>
 
     <figure>
-      <img src="blog2.jpg" alt="Blog 2 Image" width="300" height="200">
+      <img src="blog6.jpg" alt="Blog 6" width="300" height="200">
       <figcaption>
-        <a href="https://medium.com/@healthclub_36778/-8c185f2e452a" target="_blank">
-          Importance of Daily Routines for Health
+        <a href="https://medium.com/@healthclub_36778/timeless-wisdom-exploring-the-benefits-of-ancient-indian-treatments-used-by-our-grandmothers-over-d331fe114e47" target="_blank">
+          Timeless Wisdom
         </a>
-        <p>👍 <span>0</span> &nbsp; 💬 <span>0</span></p>
+        <p>
+          👍 <button onclick="likeBlog('blog6')">Like</button>
+          <span id="blog6-likes">0</span> Likes
+        </p>
       </figcaption>
     </figure>
 
     <figure>
-      <img src="blog3.jpg" alt="Blog 3 Image" width="300" height="200">
+      <img src="blog7.jpg" alt="Blog 7" width="300" height="200">
       <figcaption>
-        <a href="https://medium.com/@healthclub_36778/stress-college-life-39345ddb97b9" target="_blank">
-          Stress & College Life
+        <a href="https://medium.com/@healthclub_36778/rediscovering-wisdom-ancient-natural-indian-treatments-and-their-benefits-over-allopathic-98fc06766b90" target="_blank">
+          Rediscovering Wisdom
         </a>
-        <p>👍 <span>0</span> &nbsp; 💬 <span>0</span></p>
+        <p>
+          👍 <button onclick="likeBlog('blog7')">Like</button>
+          <span id="blog7-likes">0</span> Likes
+        </p>
       </figcaption>
     </figure>
 
     <figure>
-      <img src="blog4.jpg" alt="Blog 4 Image" width="300" height="200">
+      <img src="blog8.jpg" alt="Blog 8" width="300" height="200">
       <figcaption>
-        <a href="https://medium.com/@healthclub_36778/pulse-on-the-health-budget-d7ba7cb53c85" target="_blank">
-          Pulse on the Health Budget
+        <a href="https://medium.com/@healthclub_36778/unmasking-the-hidden-danger-treating-tobacco-use-and-its-risks-concern-with-understanding-the-dac12b64311a" target="_blank">
+          Unmasking the Hidden Danger
         </a>
-        <p>👍 <span>0</span> &nbsp; 💬 <span>0</span></p>
+        <p>
+          👍 <button onclick="likeBlog('blog8')">Like</button>
+          <span id="blog8-likes">0</span> Likes
+        </p>
       </figcaption>
     </figure>
-  </article>
 
-  <p>
-    <a href="https://medium.com/@healthclub_36778">View More →</a>
-  </p>
+    <figure>
+      <img src="blog9.jpg" alt="Blog 9" width="300" height="200">
+      <figcaption>
+        <a href="https://medium.com/@healthclub_36778/a-complete-synopsis-of-understanding-diabetes-d09905642d5a" target="_blank">
+          Understanding Diabetes
+        </a>
+        <p>
+          👍 <button onclick="likeBlog('blog9')">Like</button>
+          <span id="blog9-likes">0</span> Likes
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- Show More Button -->
+  <button onclick="toggleBlogs()" id="showMoreBtn">Show More</button>
+
 </section>
+
+<script>
+  function toggleBlogs() {
+    const moreBlogs = document.getElementById('more-blogs');
+    const btn = document.getElementById('showMoreBtn');
+
+    if (moreBlogs.style.display === "none") {
+      moreBlogs.style.display = "block";
+      btn.textContent = "Show Less";
+    } else {
+      moreBlogs.style.display = "none";
+      btn.textContent = "Show More";
+    }
+  }
+</script>
 <script>
   function toggleMoreBlogs() {
     const more = document.getElementById("moreBlogs");
